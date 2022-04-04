@@ -365,7 +365,7 @@ class ProductModel extends Model
     public function region_list()
 
     {
-        $region = DB::table('product_region')->select("id","region","delivarycost","transit_time","minimum_weight","max_weight","fee","region_type")->where("isDeleted",0)->get();
+        $region = DB::table('product_region')->select("id","region","delivarycost","minimum_weight","max_weight","fee","region_type")->where("isDeleted",0)->get();
         return $region;
     }
 
@@ -380,6 +380,13 @@ class ProductModel extends Model
     {
         $quickbooks = DB::table('product_quickbooks')->insertGetId($data_array);
         return $quickbooks;
+    }
+
+   
+    public function users_list()
+    {
+         $list = DB::table('users')->select("uid","email","password","title","first_name","last_name","country","verification_code","created_at","updated_at","verified")->where("isDeleted",0)->get();
+         return $list;
     }
 
 

@@ -966,4 +966,30 @@ class ProductController extends Controller
     }
 
 
+    public function list_users(Request $request)
+    {
+         $list = $this->_product->useres_list();
+         if($list)
+         {
+            $response = array(
+                "status" => 1,
+                "data" => $list
+            );
+         }
+         else
+         {
+
+            $response = array(
+                "status" => 0,
+                "message" => "Try Again Later"
+            );
+         }
+
+         return $response;
+    }
+    
+    
+
+
+
 }

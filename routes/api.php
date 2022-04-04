@@ -169,4 +169,6 @@ Route::post('list-product-to-category',array('middleware' => 'cors', 'uses' => "
 
 Route::post('add-product-quickbooks',array('middleware' => 'cors', 'uses' => "App\Http\Controllers\Admin\ProductController@add_product_quickbooks"));
 
-//<<<<<<<<<<<<<<<<<<<user list>
+//<<<<<<<<<<<<<<<<<<<user list
+Route::post('list-user',array('middleware' => 'cors', 'uses' => "App\Http\Controllers\Admin\ProductController@list_user"));
+
