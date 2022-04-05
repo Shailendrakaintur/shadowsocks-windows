@@ -382,7 +382,6 @@ class ProductModel extends Model
         return $quickbooks;
     }
 
-   
     public function useres_list()
     {
          $list = DB::table('users')->select("uid","email","password","title","first_name","last_name","country","verification_code","created_at","updated_at","verified")->where("isDeleted",0)->get();

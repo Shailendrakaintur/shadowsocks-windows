@@ -988,7 +988,6 @@ class ProductController extends Controller
 
          return $response;
     }
-    
 
 
 
