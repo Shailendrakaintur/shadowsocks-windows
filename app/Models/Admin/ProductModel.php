@@ -385,7 +385,7 @@ class ProductModel extends Model
     public function useres_list()
     {
          $list = DB::table('users')->select("uid","email","password","title","first_name","last_name","country","verification_code","created_at","updated_at","verified")->where("isDeleted",0)->get();
-        return $lists;
+        return $list;
     
     }
  
