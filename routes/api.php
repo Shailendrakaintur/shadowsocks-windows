@@ -172,3 +172,4 @@ Route::post('add-product-quickbooks',array('middleware' => 'cors', 'uses' => "Ap
 //<<<<<<<<<<<<<<<<<<<user list
 Route::post('list-user',array('middleware' => 'cors', 'uses' => "App\Http\Controllers\Admin\ProductController@list_users"));
 
+//>>>>>>>>>>>>>>>>>>>>>
