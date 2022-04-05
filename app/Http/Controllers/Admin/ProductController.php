@@ -968,6 +968,7 @@ class ProductController extends Controller
 
     public function list_users(Request $request)
     {
+        //$data = $request->json()->all();
          $list = $this->_product->useres_list();
          if($list)
          {

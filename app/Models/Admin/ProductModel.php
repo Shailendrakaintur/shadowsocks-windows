@@ -383,13 +383,13 @@ class ProductModel extends Model
     }
 
    
-    public function users_list()
+    public function useres_list()
     {
          $list = DB::table('users')->select("uid","email","password","title","first_name","last_name","country","verification_code","created_at","updated_at","verified")->where("isDeleted",0)->get();
-         return $list;
+        return $lists;
+    
     }
-
-
+ 
 // <<<<<<< HEAD
 
 // =======

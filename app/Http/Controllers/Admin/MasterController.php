@@ -520,17 +520,6 @@ class MasterController extends Controller
 
 
 
-
-
-
-
-
-
-
-
-
-
-
         public function add_variation_values(Request $request)
         {
 
